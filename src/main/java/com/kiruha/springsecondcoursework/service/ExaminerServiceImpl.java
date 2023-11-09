@@ -3,6 +3,7 @@ package com.kiruha.springsecondcoursework.service;
 import com.kiruha.springsecondcoursework.Question;
 import com.kiruha.springsecondcoursework.interfaceses.ExaminerService;
 import com.kiruha.springsecondcoursework.interfaceses.QuestionService;
+import com.kiruha.springsecondcoursework.selfexception.IndexQuestionBoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -19,10 +20,13 @@ public class ExaminerServiceImpl implements ExaminerService {
     @Override
     public Collection<Question> getQuestion(int amount) {
         questionListGenerate = new HashSet<>();
+        if (amount > questionService.getAll().size()) {
+            throw new IndexQuestionBoundException("Запрашивоемуе количество вопросов больше чем существующее");
+        }
         if (amount > questionListGenerate.size()) {
             while (questionListGenerate.size() < amount) {
                 Question question = questionService.getRandomQuestion();
-                System.out.println(question);
+//                System.out.println(question);/
                 questionListGenerate.add(question);
 
             }
