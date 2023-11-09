@@ -1,10 +1,7 @@
 package com.kiruha.springsecondcoursework.controller;
 
 import com.kiruha.springsecondcoursework.service.ExaminerServiceImpl;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
@@ -16,8 +13,8 @@ public class ExamController {
     public ExamController(ExaminerServiceImpl examinerService) {
         this.examinerService = examinerService;
     }
-    @GetMapping()
-    public Collection getQuestion(@RequestParam("amount") int amount) {
+    @GetMapping("{amount}")
+    public Collection getQuestion(@PathVariable int amount) {
         return examinerService.getQuestion(amount);
     }
 }

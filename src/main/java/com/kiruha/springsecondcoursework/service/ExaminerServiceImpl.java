@@ -21,16 +21,13 @@ public class ExaminerServiceImpl implements ExaminerService {
     public Collection<Question> getQuestion(int amount) {
         questionListGenerate = new HashSet<>();
         if (amount > questionService.getAll().size()) {
-            throw new IndexQuestionBoundException("Запрашивоемуе количество вопросов больше чем существующее");
+            throw new IndexQuestionBoundException("Запрашивоемое количество вопросов больше чем существующее");
         }
-        if (amount > questionListGenerate.size()) {
-            while (questionListGenerate.size() < amount) {
-                Question question = questionService.getRandomQuestion();
-//                System.out.println(question);/
-                questionListGenerate.add(question);
-
-            }
+        while (questionListGenerate.size() < amount) {
+            Question question = questionService.getRandomQuestion();
+            questionListGenerate.add(question);
         }
         return questionListGenerate;
     }
 }
+
