@@ -15,11 +15,11 @@ public class Question {
 
 
     public String getQuestion() {
-        return null;
+        return question;
     }
 
     public String getAnswer() {
-        return null;
+        return answer;
     }
 
     @Override
