@@ -13,7 +13,7 @@ public class ExamController {
     public ExamController(ExaminerServiceImpl examinerService) {
         this.examinerService = examinerService;
     }
-    @GetMapping("{amount}")
+    @GetMapping("/get/{amount}")
     public Collection getQuestion(@PathVariable int amount) {
         return examinerService.getQuestion(amount);
     }

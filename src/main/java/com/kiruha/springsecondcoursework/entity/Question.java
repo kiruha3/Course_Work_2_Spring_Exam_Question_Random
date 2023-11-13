@@ -1,6 +1,4 @@
-package com.kiruha.springsecondcoursework;
-
-import com.kiruha.springsecondcoursework.interfaceses.QuestionService;
+package com.kiruha.springsecondcoursework.entity;
 
 import java.util.Objects;
 

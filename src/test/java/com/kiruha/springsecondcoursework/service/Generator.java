@@ -1,6 +1,6 @@
 package com.kiruha.springsecondcoursework.service;
 
-import com.kiruha.springsecondcoursework.Question;
+import com.kiruha.springsecondcoursework.entity.Question;
 
 import java.util.Collection;
 import java.util.HashSet;

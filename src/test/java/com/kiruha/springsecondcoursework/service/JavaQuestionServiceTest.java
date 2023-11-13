@@ -1,6 +1,6 @@
 package com.kiruha.springsecondcoursework.service;
 
-import com.kiruha.springsecondcoursework.Question;
+import com.kiruha.springsecondcoursework.entity.Question;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

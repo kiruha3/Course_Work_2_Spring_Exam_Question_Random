@@ -1,8 +1,6 @@
 package com.kiruha.springsecondcoursework.service;
 
-import com.kiruha.springsecondcoursework.Question;
-import com.kiruha.springsecondcoursework.interfaceses.ExaminerService;
-import com.kiruha.springsecondcoursework.interfaceses.QuestionService;
+import com.kiruha.springsecondcoursework.entity.Question;
 import com.kiruha.springsecondcoursework.selfexception.IndexQuestionBoundException;
 import org.springframework.stereotype.Service;
 

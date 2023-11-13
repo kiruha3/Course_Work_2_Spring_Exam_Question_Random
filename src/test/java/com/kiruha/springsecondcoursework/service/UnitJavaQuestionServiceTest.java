@@ -1,6 +1,6 @@
 package com.kiruha.springsecondcoursework.service;
 
-import com.kiruha.springsecondcoursework.Question;
+import com.kiruha.springsecondcoursework.entity.Question;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collection;

@@ -1,7 +1,6 @@
 package com.kiruha.springsecondcoursework.service;
 
-import com.kiruha.springsecondcoursework.Question;
-import com.kiruha.springsecondcoursework.interfaceses.QuestionService;
+import com.kiruha.springsecondcoursework.entity.Question;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

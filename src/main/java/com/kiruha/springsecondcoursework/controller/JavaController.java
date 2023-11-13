@@ -1,6 +1,6 @@
 package com.kiruha.springsecondcoursework.controller;
 
-import com.kiruha.springsecondcoursework.Question;
+import com.kiruha.springsecondcoursework.entity.Question;
 import com.kiruha.springsecondcoursework.service.JavaQuestionService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
